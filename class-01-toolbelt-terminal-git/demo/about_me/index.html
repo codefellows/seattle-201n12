@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Nicholas</title>
+</head>
+<body>
+  <p>What is your name?</p>
+  <p>What is your Quest?</p>
+  <p>What is your Favorite Color?</p>
+  <p>What is the meaning of life?</p>
+
+  <script>
+    alert("My name is Nicholas and I want to learn about you. I am asking you some questions");
+
+    //UserName Question
+    var userName = prompt('What is your name?');
+    console.log('What is your name: ' + userName);
+    alert('Hi, ' + userName + ' that is such a cool name.');
+
+    //Quest Question
+    var quest = prompt('What is your quest?');
+    console.log('What is your quest: ' + quest);
+    alert(userName + ', That is such a cool quest, I too want ' + quest); //at each alert we need to give the user an update that concatenates the previous responses together 
+
+  </script>
+</body>
+</html>
