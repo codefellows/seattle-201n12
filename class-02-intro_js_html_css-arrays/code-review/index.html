@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>What is your name?</p>
+    <p>What is your Quest?</p>
+    <p>What is your favorite color?</p>
+    <p>What is the meaning of life?</p>
+
+    <script>
+    alert("My name is Nicole, and I want to learn about you. I am asking you some questions:");
+
+        //userName questions
+        var userName = prompt(' What is your name?');
+        console.log( "What is your name: " + userName);
+        alert('Hi, ' + userName + ' that is such a cool name!');
+
+        //quest question
+        var quest = prompt('What is your Quest?');
+        console.log('What is your quest: ' + quest);
+        alert(userName + ', ' + quest + ', what an awesome quest!');
+
+        //color question
+        var color = prompt("What is your favorite color?");
+        console.log("What is your favorite color? " + color);
+        alert(userName + ", reallly?! I love " + color + " too. I bet you can find something that color on your quest");
+
+        // meaning of life
+        var life = prompt('what is the meaning of life?');
+        console.log('what is the meaning of life? ' + life);
+        alert( userName + ', you know I think you might be right, ' + life + ' might really be the meaning of life! I wonder if you can find something ' + color + " that pertains to that?");
+    </script>
+</body>
+</html>
