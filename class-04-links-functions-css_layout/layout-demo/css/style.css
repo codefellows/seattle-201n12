@@ -1,0 +1,57 @@
+
+    /*  Static - Normal Flow (Default) */
+body {
+  width: 100%;
+  font-family: Arial, Verdana, sans-serif;
+  color: #665544;
+}
+h1 {
+  background-color: #efefef;
+  padding: 10px;
+}
+p{
+  width: 100%;
+}
+
+     /* Relative - Positioned relative to where elem would be in NF*/
+/* p.example {
+  position: relative;
+  top: 100px;
+  left: 100px;
+} */
+
+    /*  Absolute - Positioned relative to parent elem */
+/* img {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+} */
+
+    /*  Fixed - Positioned relative to browser window */
+/* h1 {
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+} */
+
+    /*  Z Index - A way to layer overlapping elem */
+img{
+  z-index: 5;
+}
+h1 {
+  z-index: 10;
+}
+
+    /*  Float - Positions left or right and flows text around */
+img {
+  float: right;
+}
+
+
+    /*  Fixed vs Liquid Layouts - pixel widths vs percent widths */
+
+
+    /*  Grids - see book */

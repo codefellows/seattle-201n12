@@ -111,3 +111,10 @@ do{
 if(!answeredCorrectly){
   alert('nice tries, they like tangerines, durians, canteloupe, strawberries, and dragons');
 }
+
+function area(width, height){
+  var area = width * height;
+  return [area,2];
+}
+
+area();
