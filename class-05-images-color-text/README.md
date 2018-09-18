@@ -37,6 +37,7 @@ As a result of completing Lecture 5 of Code 201, students will:
 - HTML Chapter 5: "Images"
 - CSS Chapter 11: "Color"
 - CSS Chapter 12: "Text"
+- [What I wish I knew](https://medium.freecodecamp.org/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329)
 
 [-top-](#top)
 
