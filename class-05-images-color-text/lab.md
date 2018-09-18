@@ -10,10 +10,10 @@ Put finishing touches on your About Me project and get it deployed. The more tim
 
 ### Second Part: Writing Code On Branches
 
-Today in lab you will fork and clone a (GitHub repo)[https://github.com/codefellows/seattle-201n12-lab-5], and then create solutions to some code problems such that your solutions pass the included tests.
+Today in lab you will fork and clone a [GitHub repo](https://github.com/codefellows/seattle-201n12-lab-5), and then create solutions to some code problems such that your solutions pass the included tests.
 
  - https://github.com/codefellows/seattle-201n12-lab-5
- 
+
 **Be sure to follow instructions carefully.**
 
 Here are a couple of things to keep in mind:
