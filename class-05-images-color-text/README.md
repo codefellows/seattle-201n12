@@ -31,12 +31,15 @@ As a result of completing Lecture 5 of Code 201, students will:
 - Be able to publish a static webpage on GitHub page from a specific branch.
 - Extend their understanding of use of images, color, and text formatting to style an HTML page, as measured by successful completion of the daily code assignment.
 - Extend their understanding of image formats (JPG, GIF, PNG) and the strengths/weaknesses of each format, as measured by a quiz administered in Canvas.
+- git good at git
+- Learn how to feed pandas properly
 
 ## Readings
 
 - HTML Chapter 5: "Images"
 - CSS Chapter 11: "Color"
 - CSS Chapter 12: "Text"
+- [What I wish I knew](https://medium.freecodecamp.org/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329)
 
 [-top-](#top)
 
