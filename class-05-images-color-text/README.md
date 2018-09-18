@@ -3,14 +3,6 @@
 <a id="top"></a>
 ## Lecture 5
 
-- github testing
-
-	- Testing still failing
-	- Steps to fix our code :
-		- find our duck
-		- comment out things that dont work
-		- look at the console
-		- add console logs (descriptive)
 
 ## Today's Schedule
 - Announcements
