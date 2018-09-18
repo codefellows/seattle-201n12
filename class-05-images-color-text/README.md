@@ -20,6 +20,8 @@
 - [Various topics](#smattering) *[75 minutes]*
 - [Git Branching, including deployment](#git) *[30 minutes]*
 - [Lab Overview](#lab) *[45 minutes]*
+- We are playing with git
+- pizza and ice cream
 
 **Learning Objectives**
 
