@@ -31,6 +31,7 @@ As a result of completing Lecture 5 of Code 201, students will:
 - Be able to publish a static webpage on GitHub page from a specific branch.
 - Extend their understanding of use of images, color, and text formatting to style an HTML page, as measured by successful completion of the daily code assignment.
 - Extend their understanding of image formats (JPG, GIF, PNG) and the strengths/weaknesses of each format, as measured by a quiz administered in Canvas.
+- git good at git
 
 ## Readings
 
