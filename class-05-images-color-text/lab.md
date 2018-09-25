@@ -12,7 +12,9 @@ Put finishing touches on your About Me project and get it deployed. The more tim
 
 Today in lab you will fork and clone a [GitHub repo](https://github.com/codefellows/seattle-201n12-lab-5), and then create solutions to some code problems such that your solutions pass the included tests.
 
- - https://github.com/codefellows/seattle-201n12-lab-5
+1. visit this link https://github.com/codefellows/seattle-201n12-lab-5
+2. fork the code by clicking the fork button at the top right
+3. clone the repo, make sure the url has your github username in it and not "codefellows"
 
 **Be sure to follow instructions carefully.**
 
