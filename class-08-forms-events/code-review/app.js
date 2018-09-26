@@ -59,40 +59,30 @@ PandaStore.prototype.renderStoreHours = function () {
 };
 
 PandaStore.prototype.renderAsTableRow = function () {
-  if (!this.pandasSoldEachHour.length) { //make sure we are not doubling the data in the array
-    this.calculatePandasSoldEachHour(); //we call this here to populate our pandas sold each our array
-  }
+  //Calculate the data we need
+
   //Step 1. Reference a container element
-  var pandaTable = document.getElementById('panda-table');
 
   // Step 2. Make a new table row (tr) element
-  var trEl = document.createElement('tr');
 
   //Step 3. Give element content, a table row takes in table headers, and table data as content
 
-  //Give the Table row a header element.
-  var thEl = document.createElement('th');
-  thEl.textContent = this.name;
-  trEl.appendChild(thEl); //Append the header to the row
+  //Give the Table row a table header element.
+
 
   // give the Table Row table data about the min customers
-  var tdEl = document.createElement('td');
-  tdEl.textContent = this.min;
-  trEl.appendChild(tdEl);
+
 
   //give the Table Row a td about the max customers
-  tdEl = document.createElement('td');
-  tdEl.textContent = this.max;
-  trEl.appendChild(tdEl);
+
 
   //give the Table Row a td about the average purchased pandas per customers
-  tdEl = document.createElement('td');
-  tdEl.textContent = this.avgPandasPerSale;
-  trEl.appendChild(tdEl);
+
 
   //Step Append the row we have been building to the table itself
-  pandaTable.appendChild(trEl);
 };
+
+
 // =======================================
 // Declare our new objects
 // =======================================
@@ -113,6 +103,5 @@ var renderAllPandaStores = function () {
   bearsNBeets.renderStoreHours();
 };
 
-// renderAllPandaStores();
+renderAllPandaStores();
 
-pandasRUs.renderAsTableRow();
