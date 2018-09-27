@@ -11,6 +11,9 @@ var PandaStore = function(name, minCustomersperHour, maxCustomersPerHour, averag
   this.hoursOpen = hoursOpenPerDay;
 };
 
+
+// Add details to my global variables
+
 PandaStore.prototype.calculatePandasSoldPerHour = function() { // output is a single hour's pandas sold
   var customersPerHour = Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
   return Math.round(customersPerHour * this.avgPandasPerSale);
@@ -60,38 +63,56 @@ PandaStore.prototype.renderStoreHours = function () {
 
 PandaStore.prototype.renderAsTableRow = function () {
   //Calculate the data we need
+  this.calculatePandasSoldEachHour();
 
   //Step 1. Reference a container element
-
+  var pandaTableEl = document.getElementById('panda-table');
   // Step 2. Make a new table row (tr) element
-
+  var trEl = document.createElement('tr');
+  console.log(trEl);
   //Step 3. Give element content, a table row takes in table headers, and table data as content
 
-  //Give the Table row a table header element.
 
+  //Give the Table row a table header element.
+  var thEl = document.createElement('th'); //table header
+  thEl.textContent = this.name;
+  trEl.appendChild(thEl); // append the table header to the row
 
   // give the Table Row table data about the min customers
+  var tdEl = document.createElement('td');
+  tdEl.textContent = this.min;
+  trEl.appendChild(tdEl);
 
 
   //give the Table Row a td about the max customers
-
+  tdEl = document.createElement('td');
+  tdEl.textContent = this.max;
+  trEl.appendChild(tdEl);
 
   //give the Table Row a td about the average purchased pandas per customers
-
+  tdEl = document.createElement('td');
+  tdEl.textContent = this.avgPandasPerSale;
+  trEl.appendChild(tdEl);
 
   //Step Append the row we have been building to the table itself
+  pandaTableEl.appendChild(trEl);
 };
 
+
+//
 
 // =======================================
 // Declare our new objects
 // =======================================
-
+var allPandaStores = [];
 var pandasRUs = new PandaStore('Pandas R Us', 3, 12, .8, 15);
 var pandaSmart = new PandaStore('Pandas Smart', 1, 17, .3, 15);
 var bearsNBeets = new PandaStore('Bears Beats BSG', 7, 20, 1.2, 15);
 var pandamonium = new PandaStore('Pandamonium the Panda Emporium', 3, 12, .8, 15);
-
+allPandaStores.push(pandasRUs);
+allPandaStores.push(pandaSmart);
+allPandaStores.push(pandamonium);
+allPandaStores.push(bearsNBeets);
 // =======================================
 // A function to render all our objects
 // =======================================
@@ -103,5 +124,13 @@ var renderAllPandaStores = function () {
   bearsNBeets.renderStoreHours();
 };
 
-renderAllPandaStores();
+var renderAllPandaStoresAsTableRows = function () {
+  for(var i in allPandaStores){
+    allPandaStores[i].renderAsTableRow();
+  }
+};
+
+renderAllPandaStoresAsTableRows();
+
+// renderAllPandaStores();
 
