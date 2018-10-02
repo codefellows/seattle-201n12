@@ -6,9 +6,9 @@
 ## Today's Schedule
 - Announcements
   - It's not too soon to start thinking about final projects. Let's have a conversation about that, because soon you're going to be divided up into teams and starting on your projects.
-- Code Review *[75 minutes]*
-- [Layout Demo 1](#layout1) *[60 minutes]*
-- [Layout Demo 2](#layout2) *[75 minutes]*
+- Code Review *[60 minutes]*
+- [Code Review (Layout Review if time)](#layout1) *[45 minutes]*
+- [Layout Demo](#layout2) *[75 minutes]*
 
 **Learning Objectives**
 
