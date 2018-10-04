@@ -1,0 +1,9 @@
+header {
+  background-color: #444;
+  width: 100%;
+}
+
+header div {
+  width: 960px;
+  margin: auto;
+}
