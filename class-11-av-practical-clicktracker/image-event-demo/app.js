@@ -1,83 +1,85 @@
 'use strict';
 
 //global vars
-var goatImage1 = document.getElementById('goat1');
-var goatImage2 = document.getElementById('goat2');
+//Track what they will be clicking on/ what will have events tied to
+var goatImageLeft = document.getElementById('left');
+var goatImageRight = document.getElementById('right');
 var imageSection = document.getElementById('click-me');
-
+var goatImageLeftArrayIndex = 0;
 
 //===============
+var allGoatImages = [];
 
-GoatImage.goatArray = [];
-
-function GoatImage (src, name, size) {
+//Constructor : Goat images
+var GoatImage = function(src, name){
+  this.likes = 0;
   this.src = src;
   this.name = name;
-  this.size = size;
-  if(!size){
-    this.size = '300px';
-  }
-  this.likesCount = 0;
-  this.displayedCount = 0;
+  this.appeared = 0;
 
-  GoatImage.goatArray.push(this);
+  allGoatImages.push(this);
 }
 
+//prototypes
 
-GoatImage.prototype.loveThem = function () {
-  console.log(true);
-  return true;
+GoatImage.prototype.renderGoat = function (){
+  goatImageLeft.src = this.src;
 };
 
-// GoatImage.prototype.render = function () {
-//   console.log('rendering');
-// };
-
-GoatImage.rankGoats = function (){
-  for(var i in this.goatArray){
-    console.log(this.goatArray[i].likesCount);
-  }
-};
-
-var pastSelection1 = 0;
-var pastSelection2 = 4;
-
-GoatImage.renderTwoRandomly = function () {
+//event listeners and handlers
+var goatClickHandler = function (eventObject) {
   do {
-    var randomNumber1 = Math.floor(Math.random() * GoatImage.goatArray.length);
-  } while(randomNumber1 == pastSelection1 || randomNumber1 == pastSelection2);
+    var randomNumber = Math.floor(Math.random() * allGoatImages.length)
+  } while(randomNumber === goatImageLeftArrayIndex);
 
-  do {
-    var randomNumber2 = Math.floor(Math.random() * GoatImage.goatArray.length);
-  } while (randomNumber2 === randomNumber1 || randomNumber2 === pastSelection1 || randomNumber2 === pastSelection2);
+  allGoatImages[goatImageLeftArrayIndex].likes++;
+  allGoatImages[goatImageLeftArrayIndex].appeared++;
 
-  goatImage1.src = GoatImage.goatArray[randomNumber1].src;
-  goatImage2.src = GoatImage.goatArray[randomNumber2].src;
+  goatImageLeftArrayIndex = randomNumber;
+  eventObject.target.src = allGoatImages[randomNumber].src
+}
 
-  goatImage1.dataset.index = randomNumber1;
-  goatImage2.dataset.index = randomNumber2;
+goatImageLeft.addEventListener('click', goatClickHandler)
 
-  pastSelection1 = randomNumber1;
-  pastSelection2 = randomNumber2;
-};
 
+
+
+new GoatImage('./images/sassy-goat.jpg', 'Sassy');
+new GoatImage('./images/sweater-goat.jpg', 'Sweater Goat');
+new GoatImage('./images/kissing-goat.jpg', 'Sweater Goat');
+
+
+
+
+
+//store images: goatImageArray
+
+// GoatImage constructor
+// Tracking likes: start at 0 and increment when clicked
+// images themselves (src)
+// text
+// size
+// how many times it appeared
+// store its index??
+
+// user wants to click
 // event listener
-imageSection.addEventListener('click', imageClickHandler);
+// tie the listener to the section
 
-function imageClickHandler(event) {
-  console.log(event.target.dataset.index);
-  GoatImage.goatArray[event.target.dataset.index].likesCount++;
-
-  GoatImage.renderTwoRandomly();
-}
-
-
+// page needs to change
+// !!1. change image itself 
+// --2. change the description
+// !! 3. prevent them from repeating
+// 4. increment the clicked on goat's likes
+// Stretch- check goats for appearing
+// Stretch- give user feedback after 52 goats && 18
 // ================
 
-new GoatImage('./images/cruisin-goat.jpg', 'cruising goat', '400px');
-new GoatImage('./images/float-your-goat.jpg', 'float goat');
-new GoatImage('./images/kissing-goat.jpg', 'kissing goat');
-new GoatImage('./images/sassy-goat.jpg', 'sassy goat');
-new GoatImage('./images/sweater-goat.jpg', 'sweater goat');
+// new GoatImage('./images/cruisin-goat.jpg', 'cruising goat', '400px');
+// new GoatImage('./images/float-your-goat.jpg', 'float goat');
+// new GoatImage('./images/kissing-goat.jpg', 'kissing goat');
+// new GoatImage('./images/sassy-goat.jpg', 'sassy goat');
+// new GoatImage('./images/sweater-goat.jpg', 'sweater goat');
 
-GoatImage.renderTwoRandomly();
+// GoatImage.renderTwoRandomly();
+
