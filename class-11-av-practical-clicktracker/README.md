@@ -5,7 +5,7 @@
 
 - Q&A?
 - Anyone want to show their project from last week?
-- Continuation of JS Debugging from Friday
+- Continuation of JS Debugging from Wednesday
 - Discuss/demo topics from the readings
 
 *15 minute break*
