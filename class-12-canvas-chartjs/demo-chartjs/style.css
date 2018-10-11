@@ -1,0 +1,29 @@
+/* canvas {
+  border: 1px dotted black;
+} */
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: purple;
+  background-color: lavender;
+  background-image: url('prince.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+.inline-p {
+  display: inline;
+}
+
+canvas {
+  /*outline: 2px solid black;*/
+}
