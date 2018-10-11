@@ -26,12 +26,6 @@
 
 [-top-](#top)
 
-<a id="codereview"></a>
-#### Code Review
-
-What is the best way to facilitate learning/review from yesterday's lab?
-
-[-top-](#top)
 
 <a id="chartjs"></a>
 ### ChartJS (with code demo following)
