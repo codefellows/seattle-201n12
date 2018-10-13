@@ -1,0 +1,15 @@
+body {
+  font-family: Georgia, Times, serif;
+  background-color: maroon;
+  color: bisque;
+}
+h1 {
+  font-family: "Chilanka", "Courier New";
+  color: aliceblue;
+}
+#dataOne {
+  font-family: "Arial", "Verdana", "Helvetica";
+  background-color: salmon;
+  color: orange;
+  padding: 1%;
+}
