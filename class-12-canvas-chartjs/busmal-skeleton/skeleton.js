@@ -1,7 +1,7 @@
 'use strict';
 
 var busmalContainer = document.getElementById('busmal-container');
-// Collect all document element references we need
+// Collect all document element references we need, inlcuding ctx for chartjs
 
 // references to the current images on the page
 //document.getElementById
@@ -42,3 +42,20 @@ var handleBusmalClick = function(event){
 // (new Image('cool.jpg))
 
 busmalContainer.addEventListener('click', handleBusmalClick);
+
+// ======================================
+// Charts
+// ======================================
+
+//function to render the chart
+var renderChart = function () {
+  // chartjs needs ctx
+
+  //=================
+  //collect all data
+  // we need labels, data values, colors, 
+
+  // create a data object that gets passed all our other arrays, based off of the example from chartjs
+  //============
+  //call a new Chart and pass in ctx and our data
+}
