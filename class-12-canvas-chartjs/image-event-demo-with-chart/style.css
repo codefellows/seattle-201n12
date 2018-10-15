@@ -71,3 +71,7 @@ section div {
   float: left;
   width: 50%;
 }
+
+.hidden {
+  display:none;
+}
