@@ -52,6 +52,7 @@ var renderChart = function () {
   // chartjs needs ctx
 
   //=================
+  
   //collect all data
   // we need labels, data values, colors, 
 
