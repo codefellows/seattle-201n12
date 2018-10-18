@@ -3,9 +3,13 @@
 <a id="top"></a>
 ## Today's Plan: Week 3, Thursday Lecture
 
+- [Partner Power Hour](https://www.eventbrite.com/e/partner-power-hour-finding-your-first-job-in-software-tickets-50456427533)
+
 - Discuss/review project ideas
 
-- Code Review on Bus Mall
+- Lab Breakdown for Saturday
+  - From 9:00am - 12:00pm- Lab 13
+  - From 1:00pm - end- Lab 14
 
 *10 minute break*
 
