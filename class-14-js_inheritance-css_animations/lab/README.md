@@ -13,8 +13,7 @@ The marketing team wants the site to go live in a few hours. To give you an idea
 1. You will encounter and need to deal with a new type of form element
 1. You will need to reference elements without IDs
 
-This is a pair programming lab. One person from the pair will fork the lab repo which will contain all of the files necessary to complete the project.
-Add the other person as a collborator. That means that both of you will have privileges to push and merge to that repo.
+This is a pair programming lab. One person from the pair will make a new repo and copy the lab files into the master branch. The lab directory contains all of the files necessary to complete the project. Work off of branches of master. You will submit a pull request from a branch to master as your lab submission.
 
 Fill in the necessary code in the JavaScript and CSS files, but **do not modify the HTML files in any way**.
 
