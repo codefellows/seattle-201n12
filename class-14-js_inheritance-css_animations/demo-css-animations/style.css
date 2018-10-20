@@ -1,0 +1,100 @@
+* {
+  font-family: Helvetica, sans-serif;
+  background: #baddad;
+  color: navy;
+}
+
+p {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.notransform {
+  transform: none !important;
+}
+
+#one {
+  transform: scale(0.7, 1.5);
+  transform: skew(10deg, 110deg);
+  background: white;
+}
+
+#two {
+  transform: scale(1.2, 0.8);
+  transform: rotate(0.5turn);
+  background: yellow;
+  border-radius: 500px;
+}
+
+#three {
+  transform: scale(0.9, 1.2);
+  transform: translateX(50px) rotate(50deg) translateY(15px);
+  background: lightgray;
+}
+
+button {
+  border: 0px;
+  color: white;
+  background: red;
+  font-size: 1.3em;
+}
+
+@keyframes wiggle {
+  10%,
+  90% {
+    transform: translate3d(-13px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(16px, -100px, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-10px, 1000px, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(18px, 0, 0);
+  }
+}
+
+.wiggle {
+  animation: wiggle 20s infinite ;
+}
+
+@keyframes fontgrower {
+  0% {
+    font-size: 1em;
+    color: white;
+  }
+  50% {
+    font-size: 20em;
+    color: black;
+  }
+  100% {
+    font-size: 1em;
+    color: red;
+  }
+}
+
+.grow {
+  animation: fontgrower 10s infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 1.8s infinite;
+  animation-timing-function: linear;
+}
+
+img {
+  border-radius: 300px;
+  margin: 0px auto;
+}

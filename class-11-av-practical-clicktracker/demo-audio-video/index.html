@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>A/V Demo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>Let's look at how we embed audio and video resources using HTML5!</h1>
+  <h2>Audio</h2>
+  <audio id="levees" src="levees.m4a" controls></audio>
+  <!-- <ul>Common attributes to control playback of audio
+    <li>autoplay: Boolean; use sparingly</li>
+    <li>controls: provides playback controls to user</li>
+    <li>loop: Boolean; will play audio over and over</li>
+    <li>muted: Boolean; can use this to mute audio on page load</li>
+    <li>src: link to the audio source file</li>
+    <li>volume: Range of 0.0 (silent) to 1.0 (loudest)</li>
+    <button id="randomizer">Click this button to randomly adjust the volume</button> -->
+
+    <h2>Video</h2>
+    <video id="demi" src="demi.mov"  controls></video>
+    <!-- <ul>Common attributes to control playback of video
+      <li>autoplay: Boolean; use sparingly</li>
+      <li>controls: provides playback controls to user</li>
+      <li>height: MUST be an absolute value; no percentages!</li>
+      <li>muted: Boolean; can use this to mute audio on page load</li>
+      <li>poster: use an alternate image in place of the first frame before playback has been initialized</li>
+      <li>src: link to the audio source file</li>
+      <li>volume: Range of 0.0 (silent) to 1.0 (loudest)</li>
+      <li>width: May be an absolute value or percentages</li>
+    </ul> -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
