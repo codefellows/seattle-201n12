@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Bus Mall Store</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  
+  <body>
+  
+    <header>
+        <h1>Bus Mall Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a><span id="itemCount"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+      <section class="deck col-1">
+        <div class="card">
+          <header>
+            <h1>Your Cart</h1>
+          </header>
+          <div class="copy">
+              <ol>
+                <li>Click the "X" next to any item to remove it from your cart</li>
+              </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="deck col-1">
+        <div class="card">
+            <table id="cart">
+                <thead>
+                    <tr>
+                        <th>Remove</th>
+                        <th>Quantity</th>
+                        <th>Item</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+      </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy;2018 Code Fellows 201d33</p>
+    </footer>
+
+    <script src='js/app.js'></script>
+    <script src='js/cart.js'></script>
+</body>
+
+</html>

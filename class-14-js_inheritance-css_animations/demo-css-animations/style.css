@@ -61,7 +61,7 @@ button {
 }
 
 .wiggle {
-  animation: wiggle 1s infinite ;
+  animation: wiggle 20s infinite ;
 }
 
 @keyframes fontgrower {
@@ -75,12 +75,12 @@ button {
   }
   100% {
     font-size: 1em;
-    color: yellow;
+    color: red;
   }
 }
 
 .grow {
-  animation: fontgrower 20s infinite;
+  animation: fontgrower 10s infinite;
 }
 
 @keyframes spin {

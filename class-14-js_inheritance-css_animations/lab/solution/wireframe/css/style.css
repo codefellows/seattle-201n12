@@ -1,0 +1,177 @@
+body,html {
+    height:100%;
+    width:100%;
+}
+
+body {
+    background:#f5f5f5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Specifically Targeting the Main Header (not to be confused with headers within cards) */
+body > header {
+    background:#eee;
+    border-bottom:1px solid #ddd;
+    overflow:hidden;
+    padding: .5em 5em;
+}
+
+body > header:after {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 100;
+}
+
+body > header nav {
+    float:right;
+    line-height:2.5em;
+}
+
+body > header nav li {
+    display:inline-block;
+}
+
+body > header nav li a {
+    color: #333;
+    text-decoration:none;
+}
+
+body > header h1 {
+    float:left;
+    font-size:2.5em;
+    font-weight:bold;
+}
+
+/* Main Content */
+/* Note the height calculation -- that's to keep the footer at the bottom */
+main {
+    margin:1.5em;
+    min-height: calc(100% - 9em);
+}
+
+/* Footer Styling and sticking to the bottom */
+
+footer {
+    display:block;
+    height:1.5em;
+}
+
+footer {
+    background:#444;
+    color: #eee;
+    padding: .5em 5em;
+    text-align:center;
+}
+
+
+/* Generic Deck and Card Styles */
+.deck {
+    overflow:hidden;
+}
+
+.card {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.deck.col-2 .card { 
+    float:left;
+    width: 50%;
+}
+
+
+/* Card styles specific to this application */
+.card header {
+    background: #666;
+    color: #eee;
+    padding: .5em;
+    text-align:center;
+    text-shadow:none;
+    width: 100%;
+}
+
+.card .copy {
+    padding:1.5em;
+}
+
+
+/* Styles for the order form and summary on the main page */
+legend {
+    display:none;
+}
+
+form {
+    margin:auto;
+    width:50%;
+}
+
+input[type=number], select {
+    height:1.75em;
+    padding:.25em;
+    width: 100%;
+}
+
+input[type=submit] {
+   float:right; 
+}
+
+label {
+    display:block;
+    margin-bottom:1em;
+}
+
+label span {
+    display:block;
+    padding-bottom:.25em;
+}
+
+.card#cartContents:empty {
+    display:none;
+}
+
+.card#cartContents {
+    background:#fff;
+    padding:1.5em;
+    border: 1px solid #777;
+}
+
+
+/* Styles for the table on the cart page */
+#cart {
+    border-collapse:collapse;
+    margin:auto;
+    width:65%;
+}
+
+#cart thead tr th {
+    color: #777;
+    border-bottom: 3px solid #777;
+    font-weight:bold;
+    padding:.5em 1em;
+}
+
+
+#cart tr td {
+    border-bottom: 1px solid #ccc;
+    border-collapse:none;
+    color: #777;
+    padding:.5em 1em;
+    text-align:center;
+    width:auto;
+}
+
+#cart tr td:last-child,
+#cart tr th:last-child {
+    text-align:left;
+    width:100%;
+}
+
+#cart tr td:first-child {
+    color:red;
+    cursor:pointer;
+}
