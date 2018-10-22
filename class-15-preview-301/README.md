@@ -7,7 +7,7 @@
 
 ## Schedule for Today
 
-- Psychological Safety discussion with 
+- Psychological Safety discussion
 
 - Initial team meeting
 
