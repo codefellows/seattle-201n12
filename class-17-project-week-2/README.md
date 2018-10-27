@@ -1,4 +1,4 @@
-# Class 17 -  Project Week: Milestone 2
+# Class 17 - Saturday -  Project Week: Milestone 2
 ## Development phase
 
 Now that your project is launched, here's how to organize the development efforts of your team:
